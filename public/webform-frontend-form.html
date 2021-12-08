@@ -1,0 +1,70 @@
+<?php 
+
+/**
+ * The public-facing functionality of the plugin.
+ *
+ * @link       #
+ * @since      1.0.0
+ *
+ * @package    Webform
+ * @subpackage Webform/public
+ */
+
+/**
+ * The public-facing functionality of the plugin.
+ *
+ * Defines the plugin name, version, and two examples hooks for how to
+ * enqueue the public-facing stylesheet and JavaScript.
+ *
+ * @package    Webform
+ * @subpackage Webform/public
+ * @author     Akashdeep Sharma <money.shrma@gmail.com>
+ */
+
+?>
+<div class="webform-body">
+   <div id="webform-form">
+      <!DOCTYPE html>
+      <head>
+         <meta charset="utf-8">
+         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+         <title>contact form</title>
+      </head>
+      <body>
+         <h2 class="webform-h2">Webform</h2>
+         <p>We'd love to help,leave us your details and we'll be in touch.</p>
+         <form id="web-form-id" class="web-form-class" method="post" action="#">
+            <div class="webform-form-group">
+               <label for="Name" class="webform-label">Name</label>
+               <div class="webform-input-group">
+                  <input type="text" id="Name" name="Name" class="webform-form-control" required>
+               </div>
+            </div>
+            <div class="webform-form-group">
+               <label for="Email" class="webform-label">Email</label>
+               <div class="webform-input-group">
+                  <input type="email" id="Email" name="Email" class="webform-form-control" required>
+               </div>
+            </div>
+            <div class="webform-form-group">
+               <label for="Phone" class="webform-label">Phone number</label>
+               <div class="webform-input-group">
+                  <input type="phone" id="Phone" name="Phone" class="webform-form-control" required>
+               </div>
+            </div>
+            <div class="webform-form-group">
+               <label for="Service" class="webform-label">Service required</label>
+               <div class="webform-input-group">
+                  <select name="Service" class="webform-form-control">
+                     <option value="Electricity">Electricity</option>
+                     <option value="Internet">Internet</option>
+                     <option value="Solar">Solar</option>
+                  </select>
+               </div>
+            </div>
+            <div class="webform-form-group">
+               <button type="submit" id="webform-button" class="webform-btn webform-btn-primary webform-btn-lg webform-btn-block">Submit</button>
+            </div>
+         </form>
+   </div>
+</div>
